@@ -1,7 +1,6 @@
-###Creando nuevos modelos
+##Creando nuevos modelos
 
-## Pasos a seguir
-
+### Pasos a seguir
 1. creas en model en graficas.models
 graficas/models.py
 
@@ -20,3 +19,14 @@ chartsdj/urls.py
 templates/graficas/grafica_NOMBRE.html
 6. corres el servidor
 python manage.py runserver 8080
+
+
+##agregandolos al admin
+
+###Pasos a seguir
+
+1. editar admin.py
+graficas/admin.py
+
+
+2. agregar modelo y reegistrarlo
