@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """chartsdj URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -19,10 +20,11 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 #import apps views
-from graficas.views import grafica_simple
+from graficas.views import grafica_simple, example_simple_db
 
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', grafica_simple, name='grafica_simple')
+    url(r'^$', grafica_simple, name='grafica_simple'),
+    url(r'^example_db$', example_simple_db, name='example_simple_db')
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
