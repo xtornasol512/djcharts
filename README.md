@@ -41,5 +41,12 @@ Extras
 1. Desctivar entorno
 deactivate
 
+2. Para correr el servidor 
+cd chartsdj/
+python manage.py runserver 8080
+
+
+3.
+
 
 
