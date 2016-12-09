@@ -20,9 +20,6 @@
             <td class="dir">{{key}}</td>
             {% for val in value  %}
                 <td class="data">{{val.sucesos}}</td>
-                {% if not value %}
-                <span> - </span>
-                {%endif%}
                 {% if forloop.last %}
                 <td class="data">{{val}}</td>
                 {%endif%}
