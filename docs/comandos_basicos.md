@@ -10,4 +10,8 @@ Actual
  malu
  admin1234
 
-2.
+2. Cargar Datos de Notas por Estado
+""
+python manage.py loaddata fixtures/initial.data.json
+""
+debe correr migraciones

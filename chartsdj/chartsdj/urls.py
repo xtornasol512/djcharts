@@ -20,11 +20,12 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 #import apps views
-from graficas.views import grafica_simple, example_simple_db
+from graficas.views import grafica_simple, example_simple_db, notas_por_estado
 
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', grafica_simple, name='grafica_simple'),
-    url(r'^example_db$', example_simple_db, name='example_simple_db')
+    url(r'^example_db$', example_simple_db, name='example_simple_db'),
+    url(r'^notas_estado$', notas_por_estado, name='notas_por_estado')
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
