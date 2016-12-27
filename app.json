@@ -13,7 +13,7 @@
     }
   },
   "addons": [
-    "papertrail:hobby-dev",
+    "papertrail",
     "redistogo:Nano",
     "heroku-postgresql:hobby-dev"
   ]
