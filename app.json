@@ -1,16 +1,19 @@
 {
+  "description": "A cxuko project to experiment with heroku",
+  "env": {
+    "HOLA": "True"
+   },
   "formation": {
     "web": {
       "quantity": 1,
       "size": "Standard-1X"
     },
     "worker": {
-      "quantity": 1,
-      "size": "Standard-1X"
+      "quantity": 1
     }
   },
   "addons": [
-    "papertrail:hobby-dev",
+    "papertrail:Choklad",
     "redistogo:Nano",
     "heroku-postgresql:hobby-dev"
   ]
